@@ -22,7 +22,7 @@ namespace SampleBuildApplication.Tests.Controllers
             ViewResult result = controller.Index() as ViewResult;
 
             // Assert
-            Assert.AreEqual("This comment is used to fail the test.", result.ViewBag.Message);
+            Assert.AreEqual("Modify this template to jump-start your ASP.NET MVC application.", result.ViewBag.Message);
         }
 
         [TestMethod]
