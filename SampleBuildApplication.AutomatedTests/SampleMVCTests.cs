@@ -70,8 +70,6 @@ namespace SampleBuildApplication.AutomatedTests
             selenium.WaitForPageToLoad("30000");
             selenium.Click("link=Home");
             selenium.WaitForPageToLoad("30000");
-            selenium.Click("id=registerLink");
-            selenium.WaitForPageToLoad("30000");
         }
     }
 }
