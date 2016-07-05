@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleBuildApplication", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleBuildApplication.Tests", "SampleBuildApplication.Tests\SampleBuildApplication.Tests.csproj", "{DCFE503E-26B7-4437-8A04-C682B1C44E5D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleBuildApplication.AutomatedTests", "SampleBuildApplication.AutomatedTests\SampleBuildApplication.AutomatedTests.csproj", "{D4C01E10-6825-4C28-8CC6-B9DFD9B2F238}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{DCFE503E-26B7-4437-8A04-C682B1C44E5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCFE503E-26B7-4437-8A04-C682B1C44E5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCFE503E-26B7-4437-8A04-C682B1C44E5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4C01E10-6825-4C28-8CC6-B9DFD9B2F238}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4C01E10-6825-4C28-8CC6-B9DFD9B2F238}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4C01E10-6825-4C28-8CC6-B9DFD9B2F238}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4C01E10-6825-4C28-8CC6-B9DFD9B2F238}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
