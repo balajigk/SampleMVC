@@ -34,7 +34,7 @@ namespace SampleBuildApplication.AutomatedTests
             }
             Assert.AreEqual("", verificationErrors.ToString());
         }
-
+                                                 
         [Test]
         public void TheSampleMVCTestsTest()
         { 
@@ -47,11 +47,39 @@ namespace SampleBuildApplication.AutomatedTests
             selenium.WaitForPageToLoad("30000");
             selenium.Click("link=Home");
             selenium.WaitForPageToLoad("30000");
+            selenium.Click("id=registerLink");
+            selenium.WaitForPageToLoad("30000");
+            selenium.Type("id=UserName", "balaji.gk");
+            selenium.Type("id=Password", "Marlabs@123");
+            selenium.Type("id=ConfirmPassword", "Marlabs@123");
+            selenium.Click("css=input[type=\"submit\"]");
+            selenium.WaitForPageToLoad("30000");
+            selenium.Click("link=Log off");
+            selenium.WaitForPageToLoad("30000");
             selenium.Click("id=loginLink");
             selenium.WaitForPageToLoad("30000");
             selenium.Type("id=UserName", "balaji.gk");
             selenium.Type("id=Password", "Marlabs@123");
             selenium.Click("css=input[type=\"submit\"]");
+            selenium.WaitForPageToLoad("30000");
+            selenium.Click("link=About");
+            selenium.WaitForPageToLoad("30000");
+            selenium.Click("link=Contact");
+            selenium.WaitForPageToLoad("30000");
+            selenium.Click("link=balaji.gk");
+            selenium.WaitForPageToLoad("30000");
+            selenium.Click("link=Home");
+            selenium.WaitForPageToLoad("30000");
+            selenium.Open("/");  
+            selenium.Click("link=Home");
+            selenium.WaitForPageToLoad("30000");
+            selenium.Click("link=About");
+            selenium.WaitForPageToLoad("30000");
+            selenium.Click("link=Contact");
+            selenium.WaitForPageToLoad("30000");
+            selenium.Click("link=Home");
+            selenium.WaitForPageToLoad("30000");
+            selenium.Click("id=registerLink");
             selenium.WaitForPageToLoad("30000");
         }
     }
