@@ -49,7 +49,7 @@ namespace SampleBuildApplication.AutomatedTests
             selenium.WaitForPageToLoad("30000");
             selenium.Click("id=registerLink");
             selenium.WaitForPageToLoad("30000");
-            selenium.Type("id=UserName", "balaji.gk");
+            selenium.Type("id=UserName", "balajigk");
             selenium.Type("id=Password", "Marlabs@123");
             selenium.Type("id=ConfirmPassword", "Marlabs@123");
             selenium.Click("css=input[type=\"submit\"]");
@@ -58,7 +58,7 @@ namespace SampleBuildApplication.AutomatedTests
             selenium.WaitForPageToLoad("30000");
             selenium.Click("id=loginLink");
             selenium.WaitForPageToLoad("30000");
-            selenium.Type("id=UserName", "balaji.gk");
+            selenium.Type("id=UserName", "balajigk");
             selenium.Type("id=Password", "Marlabs@123");
             selenium.Click("css=input[type=\"submit\"]");
             selenium.WaitForPageToLoad("30000");
