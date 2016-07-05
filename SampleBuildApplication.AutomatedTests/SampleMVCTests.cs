@@ -3,7 +3,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 using NUnit.Framework;
-using Selenium; 
+using Selenium;
 
 namespace SampleBuildApplication.AutomatedTests
 {
@@ -16,7 +16,7 @@ namespace SampleBuildApplication.AutomatedTests
         [SetUp]
         public void SetupTest()
         {
-            selenium = new DefaultSelenium("localhost", 4444, "*firefox", "http://localhost:54892/");
+            selenium = new DefaultSelenium("localhost", 4444, "*chrome", "http://localhost:54892/");
             selenium.Start();
             verificationErrors = new StringBuilder();
         }
@@ -37,36 +37,7 @@ namespace SampleBuildApplication.AutomatedTests
 
         [Test]
         public void TheSampleMVCTestsTest()
-        {
-            selenium.Click("link=About");
-            selenium.WaitForPageToLoad("30000");
-            selenium.Click("link=Contact");
-            selenium.WaitForPageToLoad("30000");
-            selenium.Click("link=Home");
-            selenium.WaitForPageToLoad("30000");
-            selenium.Click("id=registerLink");
-            selenium.WaitForPageToLoad("30000");
-            selenium.Type("id=UserName", "balaji.gk");
-            selenium.Type("id=Password", "Marlabs@123");
-            selenium.Type("id=ConfirmPassword", "Marlabs@123");
-            selenium.Click("css=input[type=\"submit\"]");
-            selenium.WaitForPageToLoad("30000");
-            selenium.Click("link=Log off");
-            selenium.WaitForPageToLoad("30000");
-            selenium.Click("id=loginLink");
-            selenium.WaitForPageToLoad("30000");
-            selenium.Type("id=UserName", "balaji.gk");
-            selenium.Type("id=Password", "Marlabs@123");
-            selenium.Click("css=input[type=\"submit\"]");
-            selenium.WaitForPageToLoad("30000");
-            selenium.Click("link=About");
-            selenium.WaitForPageToLoad("30000");
-            selenium.Click("link=Contact");
-            selenium.WaitForPageToLoad("30000");
-            selenium.Click("link=balaji.gk");
-            selenium.WaitForPageToLoad("30000");
-            selenium.Click("link=Home");
-            selenium.WaitForPageToLoad("30000");
+        { 
             selenium.Open("/");
             selenium.Click("link=Home");
             selenium.WaitForPageToLoad("30000");
@@ -76,8 +47,12 @@ namespace SampleBuildApplication.AutomatedTests
             selenium.WaitForPageToLoad("30000");
             selenium.Click("link=Home");
             selenium.WaitForPageToLoad("30000");
-            selenium.Click("id=registerLink");
+            selenium.Click("id=loginLink");
+            selenium.WaitForPageToLoad("30000");
+            selenium.Type("id=UserName", "balaji.gk");
+            selenium.Type("id=Password", "Marlabs@123");
+            selenium.Click("css=input[type=\"submit\"]");
             selenium.WaitForPageToLoad("30000");
         }
-    } 
+    }
 }
