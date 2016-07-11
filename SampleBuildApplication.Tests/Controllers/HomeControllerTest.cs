@@ -22,7 +22,7 @@ namespace SampleBuildApplication.Tests.Controllers
             ViewResult result = controller.Index() as ViewResult;
 
             // Assert
-            Assert.AreEqual("Sample Application to Test Continuous Integration and Continuous Deploy.", result.ViewBag.Message);
+            Assert.AreEqual("Sample Application to Test Continuous Integration and Continuous Deployment.", result.ViewBag.Message);
         }
 
         [TestMethod]

@@ -10,7 +10,7 @@ namespace SampleBuildApplication.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Sample Application to Test Continuous Integration and Continuous Deploy.";
+            ViewBag.Message = "Sample Application to Test Continuous Integration and Continuous Deployment.";
 
             return View();
         }
