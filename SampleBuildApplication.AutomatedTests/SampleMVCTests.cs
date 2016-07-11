@@ -16,7 +16,7 @@ namespace SampleBuildApplication.AutomatedTests
         [SetUp]
         public void SetupTest()
         {
-            selenium = new DefaultSelenium("localhost", 8888, "*firefox", "http://localhost:54892/");
+            selenium = new DefaultSelenium("localhost", 8888, "*firefox", "http://192.168.37.31:8088/");
             selenium.Start();
             verificationErrors = new StringBuilder();
         }
