@@ -39,6 +39,7 @@ namespace SampleBuildApplication.AutomatedTests
         public void TheSampleMVCTestsTest()
         { 
             selenium.Open("/");
+            selenium.WindowMaximize();
             selenium.Click("link=Home");
             selenium.WaitForPageToLoad("30000");
             selenium.Click("link=About");
@@ -47,28 +48,9 @@ namespace SampleBuildApplication.AutomatedTests
             selenium.WaitForPageToLoad("30000");
             selenium.Click("link=Home");
             selenium.WaitForPageToLoad("30000");
-            selenium.Click("id=loginLink");
-            selenium.WaitForPageToLoad("30000");
-            selenium.Type("id=UserName", "balajigk");
-            selenium.Type("id=Password", "Marlabs@123");
-            selenium.Click("css=input[type=\"submit\"]");
-            selenium.WaitForPageToLoad("30000");
             selenium.Click("link=About");
             selenium.WaitForPageToLoad("30000");
             selenium.Click("link=Contact");
-            selenium.WaitForPageToLoad("30000");
-            selenium.Click("link=balajigk");
-            selenium.WaitForPageToLoad("30000");
-            selenium.Click("link=Home");
-            selenium.WaitForPageToLoad("30000");
-            selenium.Open("/");  
-            selenium.Click("link=Home");
-            selenium.WaitForPageToLoad("30000");
-            selenium.Click("link=About");
-            selenium.WaitForPageToLoad("30000");
-            selenium.Click("link=Contact");
-            selenium.WaitForPageToLoad("30000");
-            selenium.Click("link=Home");
             selenium.WaitForPageToLoad("30000");
         }
     }
